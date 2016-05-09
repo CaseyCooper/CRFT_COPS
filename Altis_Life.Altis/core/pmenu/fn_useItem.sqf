@@ -62,6 +62,11 @@ switch (true) do {
 		if(vehicle player != player) exitWith {hint localize "STR_ISTR_RefuelInVehicle"};
 		[] spawn life_fnc_jerryRefuel;
 	};
+	
+	case (_item == "marijuana"):{    
+		if(([false,_item,1] call life_fnc_handleInv)) then    {       
+		[] spawn life_fnc_weed;    };
+	};
 
 	case (EQUAL(_item,"lockpick")): {
 		[] spawn life_fnc_lockpick;

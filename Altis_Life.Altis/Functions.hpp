@@ -343,6 +343,7 @@ class Life_Client_Core
 		class placestorageBig {};
 		class placestorageSmall {};
 		class placedefinestorage {};
+		class weed {};
 	};
 
 	class Dialog_Controls
