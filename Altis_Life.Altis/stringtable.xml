@@ -2960,6 +2960,9 @@
       <Portuguese>Você foi solto por %1</Portuguese>
       <Polish>Zostałeś rozkuty przez %1</Polish>
     </Key>
+	<Key ID="STR_Cop_Rubberbullet">
+	<Original>You have been Knocked out by a rubber bullet</Original>
+	</Key>
   </Package>
   <Package name="MISC_Strings">
     <Key ID="STR_MISC_TooMuch">
