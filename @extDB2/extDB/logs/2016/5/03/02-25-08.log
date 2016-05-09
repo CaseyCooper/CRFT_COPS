@@ -1,0 +1,27 @@
+extDB2: Version: 70
+extDB2: https://github.com/Torndeco/extDB2
+extDB2: Windows Version
+Message: All development for extDB2 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB2 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 20/02/15
+
+
+extDB2: Found extdb-conf.ini
+extDB2: Detected 16 Cores, Setting up 6 Worker Threads
+
+
+[22:25:08:133403 --4:00] [Thread 5468] extDB2: Database Type: MySQL
+[22:25:08:147404 --4:00] [Thread 5468] extDB2: Database Session Pool Started
+[22:25:08:151404 --4:00] [Thread 5468] extDB2: SQL_RAW_V2: Initialized: ADD_QUOTES True
+[22:25:08:162405 --4:00] [Thread 2944] extDB2: SQL_RAW_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_execute error	[mysql_stmt_error]: The user specified as a definer ('arma3'@'localhost') does not exist	[mysql_stmt_errno]: 1449	[mysql_stmt_sqlstate]: HY000	[statemnt]: CALL resetLifeVehicles
+[22:25:08:162405 --4:00] [Thread 2944] extDB2: SQL_RAW_V2: Error StatementException: SQL: CALL resetLifeVehicles
+[22:25:08:172406 --4:00] [Thread 6676] extDB2: SQL_RAW_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_execute error	[mysql_stmt_error]: The user specified as a definer ('arma3'@'localhost') does not exist	[mysql_stmt_errno]: 1449	[mysql_stmt_sqlstate]: HY000	[statemnt]: CALL deleteOldHouses
+[22:25:08:172406 --4:00] [Thread 6176] extDB2: SQL_RAW_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_execute error	[mysql_stmt_error]: The user specified as a definer ('arma3'@'localhost') does not exist	[mysql_stmt_errno]: 1449	[mysql_stmt_sqlstate]: HY000	[statemnt]: CALL deleteDeadVehicles
+[22:25:08:172406 --4:00] [Thread 6176] extDB2: SQL_RAW_V2: Error StatementException: SQL: CALL deleteDeadVehicles
+[22:25:08:172406 --4:00] [Thread 6676] extDB2: SQL_RAW_V2: Error StatementException: SQL: CALL deleteOldHouses
+[22:25:08:173406 --4:00] [Thread 3596] extDB2: SQL_RAW_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_execute error	[mysql_stmt_error]: The user specified as a definer ('arma3'@'localhost') does not exist	[mysql_stmt_errno]: 1449	[mysql_stmt_sqlstate]: HY000	[statemnt]: CALL deleteOldGangs
+[22:25:08:173406 --4:00] [Thread 3596] extDB2: SQL_RAW_V2: Error StatementException: SQL: CALL deleteOldGangs
+[22:26:08:679866 --4:00] [Thread 5468] extDB2: Stopping ...
