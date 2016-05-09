@@ -1,47 +1,63 @@
-/*
-	Author:AlaskaVet
-*/
 
-//Close inventory
-closeDialog ;
+private["_rndSong","_smoke"];
 
-//Little hint then wait a litle before starting drugs effects
-hint "Winners don't use drugs BUT you do";
+
+
+
+
+
+closeDialog 0;
+
+
+hint "Yeahhh!, a different Cannabis Cup winner every time!!!";
 sleep 3;
 
-//Activate ppEffects we need
+
 "chromAberration" ppEffectEnable true;
 "radialBlur" ppEffectEnable true;
-enableCamShake true;
-_smoke = "SmokeShellGreen" createVehicle position player;
+
+
+_smoke = "SmokeShell" createVehicle position player;
 if (vehicle player != player) then
     {
-        _smoke attachTo [vehicle player, [-0.6,-1,]];
+        _smoke attachTo [vehicle player, [-0.6,-1,0]];
     }
     else
     {
-        _smoke attachTo [player, [,-0.1,1.5]];
+        _smoke attachTo [player, [0,-0.1,1.5]];
     };
-    
-//Let's go for 45secs of effetcs
-for "_i" from  to 44 do
+	
+/*
+_rndSong = round(random 3) + 1;
+sleep 2;
+if (_rndSong == 1) then {  playSound "weedsong"; };
+if (_rndSong == 2) then {  playSound "weedsong2"; };
+if (_rndSong == 3) then {  playSound "weedsong3"; };
+if (_rndSong == 4) then {  playSound "weedsong4"; };
+*/
+
+
+
+
+
+for "_i" from 0 to 38 do
 {
-    "chromAberration" ppEffectAdjust [random 0.25,random 0.25,true];
+    "chromAberration" ppEffectAdjust [random 0.04,random 0.04,true];
     "chromAberration" ppEffectCommit 1;   
-    "radialBlur" ppEffectAdjust  [random 0.02,random 0.02,0.15,0.15];
+    "radialBlur" ppEffectAdjust  [random 0.02,random 0.02,0.15,0.10];
     "radialBlur" ppEffectCommit 1;
-    addcamShake[random 3, 1, random 3];
+    
     sleep 1;
 };
 
-//Stop effects
-"chromAberration" ppEffectAdjust [,,true];
+
+"chromAberration" ppEffectAdjust [0,0,true];
 "chromAberration" ppEffectCommit 5;
-"radialBlur" ppEffectAdjust  [,,,];
+"radialBlur" ppEffectAdjust  [0,0,0,0];
 "radialBlur" ppEffectCommit 5;
 sleep 6;
 
-//Deactivate ppEffects
+
 "chromAberration" ppEffectEnable false;
 "radialBlur" ppEffectEnable false;
 resetCamShake;
