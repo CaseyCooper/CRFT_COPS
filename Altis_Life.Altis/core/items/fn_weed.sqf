@@ -44,4 +44,4 @@ sleep 6;
 //Deactivate ppEffects
 "chromAberration" ppEffectEnable false;
 "radialBlur" ppEffectEnable false;
-resetCamShake;[/Spoiler]
+resetCamShake;

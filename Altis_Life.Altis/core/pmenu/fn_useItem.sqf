@@ -62,6 +62,10 @@ switch (true) do {
 		if(vehicle player != player) exitWith {hint localize "STR_ISTR_RefuelInVehicle"};
 		[] spawn life_fnc_jerryRefuel;
 	};
+
+	case (EQUAL(_item,"lockpick")): {
+		[] spawn life_fnc_lockpick;
+	};
 	
 	case (_item == "marijuana"):
 	{
@@ -70,10 +74,6 @@ switch (true) do {
         [] spawn life_fnc_weed;
 		};
     };
-
-	case (EQUAL(_item,"lockpick")): {
-		[] spawn life_fnc_lockpick;
-	};
 
 	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtlesoup","hen","rooster","sheep","goat","donuts","tbacon","peach"]): {
 		if(!(EQUAL(M_CONFIG(getNumber,"VirtualItems",_item,"edible"),-1))) then {
