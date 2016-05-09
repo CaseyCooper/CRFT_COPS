@@ -6,7 +6,7 @@
 closeDialog ;
 
 //Little hint then wait a litle before starting drugs effects
-hint "Winners don't use drugs BUT You do !!!";
+hint "Winners don't use drugs BUT you do";
 sleep 3;
 
 //Activate ppEffects we need
