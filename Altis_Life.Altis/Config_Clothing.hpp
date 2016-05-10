@@ -124,7 +124,7 @@ class Clothing {
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, { "", "", -1 } },
-            { "G_Aviator", "", 0, { "", "", -1 } }
+            { "G_Aviator", "", 0, { "", "", -1 } },
 			{ "Mask_M50", "", 0, { "", "", -1 } }
         };
         vests[] = {
