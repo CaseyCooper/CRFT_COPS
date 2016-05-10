@@ -133,6 +133,7 @@ class WeaponShops {
         items[] = {
 			{ "DDOPP_X26", "Tazer", 0, -1 },
 			{ "arifle_MX_GL_Black_F", "Riot Gun", 0, -1 },	
+			{ "1Rnd_SmokeBlue_Grenade_shell", "Teargas For GL", 0 },
             { "hgun_mas_glocksf_F", "Glock 21", 0, -1 },
             { "arifle_mas_m1014", "Shotgun", 0, -1 },
 			{ "PMC_m4", "M4", 0, -1 },		
@@ -148,7 +149,6 @@ class WeaponShops {
         };
         mags[] = {
 			{ "DDOPP_1Rnd_X26", "Tazer Cartridge", 0 },
-			{ "1Rnd_SmokeBlue_Grenade_shell", "Teargas For GL", 0 },
             { "30Rnd_65x39_caseless_mag_Tracer", "Rubber Bullet Mag", 0 },   			
             { "12Rnd_mas_45acp_Mag", "Glock Mag", 0 },
 			{ "30Rnd_556x45_Stanag", "M4 Mag", 0 },
