@@ -81,7 +81,7 @@ if(!_isVehicle) then {
 	_curTarget SVAR ["transporting",false,true];
 } else {
 	_dice = random(100);
-	if(_dice < 30) then {
+	if(_dice < 100) then {
 		titleText[localize "STR_ISTR_Lock_Success","PLAIN"];
 		life_vehicles pushBack _curTarget;
 		[getPlayerUID player,profileName,"487"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
